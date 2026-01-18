@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرتي الذاتية الاحترافية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">الملف الشخصي</div>
+        <ul class="nav-links">
+            <li><a href="#about">من أنا</a></li>
+            <li><a href="#education">المؤهلات العلمية</a></li>
+            <li><a href="#experience">الخبرات العملية</a></li>
+            <li><a href="#skills">المهارات والقدرات</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="profile-container">
+            <img src="your-photo.jpg" alt="صورتي الشخصية" class="profile-img">
+            <h1>اسمك الكامل هنا</h1>
+            <p>مطور واجهات / مصمم جرافيك / مهندس</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2 class="section-title">من أنا</h2>
+        <div class="content-card">
+            <p>هنا تكتب نبذة تعريفية عنك وعن طموحاتك المهنية. احرص على أن تكون العبارات ملهمة واحترافية تعكس شخصيتك العملية.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">المؤهلات العلمية</h2>
+        <div class="content-card">
+            <div class="item">
+                <h3>بكالوريوس هندسة البرمجيات</h3>
+                <span>جامعة الملك سعود | 2018 - 2022</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">الخبرات العملية</h2>
+        <div class="content-card border-gold">
+            <div class="item">
+                <h3>مطور واجهات أول</h3>
+                <p>شركة التقنية المتقدمة | 2022 - الحالي</p>
+                <ul>
+                    <li>تطوير وتحسين تجربة المستخدم للمواقع الكبرى.</li>
+                    <li>قيادة فريق البرمجة في مشاريع حيوية.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">المهارات والقدرات</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">HTML5 & CSS3</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">UI/UX Design</div>
+            <div class="skill-tag">إدارة المشاريع</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024</p>
+    </footer>
+
+</body>
+</html>

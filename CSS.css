@@ -1,0 +1,139 @@
+/* الألوان الأساسية */
+:root {
+    --navy: #001f3f;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --light-gray: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* لجعل التنقل انسيابي */
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--white);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: var(--navy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--gold);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--gold);
+}
+
+/* القسم الرئيسي والصورة */
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    background: linear-gradient(135deg, #fdfdfd 0%, #ececec 100%);
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--gold);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--navy);
+}
+
+/* الأقسام */
+.section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    color: var(--navy);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--gold);
+    margin: 10px auto;
+}
+
+/* البطاقات */
+.content-card {
+    background: var(--light-gray);
+    padding: 30px;
+    border-right: 8px solid var(--navy); /* إطار جانبي كحلي */
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    border-right-color: var(--gold); /* يتغير للذهبي عند التمرير */
+}
+
+/* المهارات */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: var(--navy);
+    color: var(--gold);
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--gold);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--navy);
+    color: var(--white);
+}
